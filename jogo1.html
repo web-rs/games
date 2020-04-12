@@ -92,57 +92,7 @@ img.emoji {
 
 <meta name="onesignal" content="wordpress-plugin">
 <link rel="manifest" href="https://freakxapps.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/manifest.json.php?gcm_sender_id=">
-<script async="" src="file:///C:/Users/Android/Desktop/jogo1/OneSignalSDK.js.download" type="text/javascript"></script> <script type="text/javascript">
 
-      window.OneSignal = window.OneSignal || [];
-
-      OneSignal.push( function() {
-        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
-        OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
-        OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
-
-        OneSignal.setDefaultNotificationUrl("https://freakxapps.com");
-        var oneSignal_options = {};
-        window._oneSignalInitOptions = oneSignal_options;
-
-        oneSignal_options['wordpress'] = true;
-oneSignal_options['appId'] = '831674ac-b301-48f0-99cb-07c20a4671de';
-oneSignal_options['autoRegister'] = true;
-oneSignal_options['httpPermissionRequest'] = { };
-oneSignal_options['httpPermissionRequest']['enable'] = true;
-oneSignal_options['welcomeNotification'] = { };
-oneSignal_options['welcomeNotification']['title'] = "";
-oneSignal_options['welcomeNotification']['message'] = "";
-oneSignal_options['path'] = "https://freakxapps.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
-oneSignal_options['promptOptions'] = { };
-oneSignal_options['notifyButton'] = { };
-oneSignal_options['notifyButton']['enable'] = true;
-oneSignal_options['notifyButton']['position'] = 'bottom-left';
-oneSignal_options['notifyButton']['theme'] = 'default';
-oneSignal_options['notifyButton']['size'] = 'small';
-oneSignal_options['notifyButton']['prenotify'] = true;
-oneSignal_options['notifyButton']['showCredit'] = true;
-oneSignal_options['notifyButton']['text'] = {};
-oneSignal_options['notifyButton']['text']['message.prenotify'] = 'Get Information as soon we releases new html5 game';
-              OneSignal.init(window._oneSignalInitOptions);
-                    });
-
-      function documentInitOneSignal() {
-        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
-
-        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
-          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
-      }
-
-      if (document.readyState === 'complete') {
-           documentInitOneSignal();
-      }
-      else {
-           window.addEventListener("load", function(event){
-               documentInitOneSignal();
-          });
-      }
-    </script>
 <meta name="generator" content="Powered by Slider Revolution 5.4.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
 <style type="text/css">
                     <!--
